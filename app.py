@@ -764,7 +764,7 @@ def main() -> None:
         .notice-error {background:#fff1f3;border-color:#f4ccd3;color:#9b3346;}
         .status-pill {display:inline-flex;align-items:center;padding:.48rem .8rem;border-radius:999px;
           font-size:.82rem;font-weight:700;margin:.15rem 0 .8rem;border:1px solid transparent;}
-        .status-covered {background:#e9f2ff;color:#175fc1;border-color:#c9ddff;}
+        .status-covered {background:#e6f6ec;color:#1a7f45;border-color:#bfe6cd;}
         .status-declined {background:#fff0f2;color:#b3263b;border-color:#ffd2d9;}
         .status-partial {background:#fff6e5;color:#8b5b00;border-color:#ffe1a8;}
         .status-review {background:#f2edff;color:#6842b8;border-color:#ded0ff;}
