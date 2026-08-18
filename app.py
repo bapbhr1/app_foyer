@@ -608,7 +608,7 @@ def main() -> None:
     """Point d'entrée : configure la page, l'état et le rendu Streamlit."""
     _configure_network()
     st.set_page_config(
-        page_title="Foyer · Assistant Contrats",
+        page_title="Assistant IA pour contrats",
         layout="wide",
         initial_sidebar_state="collapsed",
     )
