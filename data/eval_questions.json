@@ -144,5 +144,110 @@
     "product_line": "pro",
     "relevant": [{"contract_id": "PRO-2024-007", "article_id": "R3"}],
     "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "auto-tiers-dommages-propres",
+    "question": "Avec une formule au tiers, les dommages à mon propre véhicule dans un accident responsable sont-ils couverts ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "AUTO-2024-008", "article_id": "AT1"}],
+    "expected_status": "NON_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "moto-equipements-motard",
+    "question": "Mon casque et mon blouson sont-ils remboursés après une chute en moto ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "MOTO-2024-011", "article_id": "M3"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "moto-vol-antivol",
+    "question": "Le vol de ma moto est-il couvert et sous quelle condition d'antivol ?",
+    "product_line": "moto",
+    "relevant": [{"contract_id": "MOTO-2024-011", "article_id": "M4"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "gav-seuil-intervention",
+    "question": "Un accident domestique avec 3 % d'incapacité permanente est-il indemnisé par la garantie accidents de la vie ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "GAV-2024-012", "article_id": "G2"}],
+    "expected_status": "NON_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "animaux-carence-maladie",
+    "question": "Mon chien tombe malade deux semaines après la souscription, les frais vétérinaires sont-ils remboursés ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "ANIM-2024-013", "article_id": "AN3"}],
+    "expected_status": "NON_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "animaux-forfait-prevention",
+    "question": "Les vaccins et la stérilisation de mon chat sont-ils pris en charge ?",
+    "product_line": "animaux",
+    "relevant": [{"contract_id": "ANIM-2024-013", "article_id": "AN4"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "obseques-carence-premiere-annee",
+    "question": "En cas de décès par maladie la première année, le capital obsèques est-il versé en entier ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "OBSQ-2024-014", "article_id": "O3"}],
+    "expected_status": "NON_PRIS_EN_CHARGE"
+  },
+  {
+    "id": "obseques-rapatriement-corps",
+    "question": "Le rapatriement du corps est-il pris en charge par l'assurance obsèques ?",
+    "product_line": "obseques",
+    "relevant": [{"contract_id": "OBSQ-2024-014", "article_id": "O4"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "scolaire-harcelement",
+    "question": "Mon enfant est victime de harcèlement à l'école, une assistance est-elle prévue ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "SCOL-2024-015", "article_id": "SC5"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "sante-premium-implants",
+    "question": "Les implants dentaires sont-ils remboursés par la complémentaire santé ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "SANTE-2024-010", "article_id": "SP4"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "emprunteur-substitution-lemoine",
+    "question": "Puis-je changer d'assurance emprunteur en cours de prêt et à quelles conditions ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "EMPR-2024-005", "article_id": "E8"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "habitation-relogement",
+    "question": "Si mon logement devient inhabitable après un sinistre, les frais de relogement sont-ils pris en charge ?",
+    "product_line": "habitation",
+    "relevant": [{"contract_id": "HAB-2024-002", "article_id": "H11"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "pro-cyber",
+    "question": "Après une cyberattaque, la restauration des données de l'entreprise est-elle couverte ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "PRO-2024-007", "article_id": "R6"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "voyage-caution-penale",
+    "question": "En cas de poursuite à l'étranger après un accident involontaire, la caution pénale est-elle avancée ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "VOY-2024-006", "article_id": "V7"}],
+    "expected_status": "PRIS_EN_CHARGE"
+  },
+  {
+    "id": "prevoyance-rente-education",
+    "question": "En cas de décès, mes enfants perçoivent-ils une rente pour leurs études ?",
+    "product_line": null,
+    "relevant": [{"contract_id": "PREV-2024-004", "article_id": "P7"}],
+    "expected_status": "PRIS_EN_CHARGE"
   }
 ]

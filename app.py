@@ -24,11 +24,16 @@ APP_STATE_VERSION = 5
 PRODUCT_LINES = {
     "Toutes les branches": None,
     "Automobile": "auto",
+    "Moto": "moto",
     "Habitation": "habitation",
     "Santé": "sante",
     "Prévoyance": "prevoyance",
+    "Accidents de la vie (GAV)": "gav",
     "Emprunteur": "emprunteur",
     "Voyage": "voyage",
+    "Animaux": "animaux",
+    "Obsèques": "obseques",
+    "Scolaire": "scolaire",
     "Professionnelle": "pro",
 }
 STATUS = {
@@ -513,11 +518,15 @@ def render_documents() -> None:
         st.session_state.focus_contract_id = None
         st.session_state.focus_article_id = None
 
-    counts = pd.DataFrame(
-        [{"Branche": contract["product"], "Clauses": len(contract["articles"])} for contract in contracts]
+    counts = (
+        pd.DataFrame(
+            [{"Branche": contract["product"], "Clauses": len(contract["articles"])} for contract in contracts]
+        )
+        .groupby("Branche", as_index=False)["Clauses"]
+        .sum()
     )
-    st.markdown("#### Répartition des clauses par contrat")
-    branch_colors = [
+    st.markdown("#### Répartition des clauses par produit")
+    palette = [
         "#4285F4",
         "#5B78F1",
         "#746BEA",
@@ -526,9 +535,10 @@ def render_documents() -> None:
         "#538FDB",
         "#23B8D8",
     ]
+    branch_colors = [palette[index % len(palette)] for index in range(len(counts))]
     color_scale = alt.Scale(
         domain=counts["Branche"].tolist(),
-        range=branch_colors[: len(counts)],
+        range=branch_colors,
     )
     bars = (
         alt.Chart(counts)
